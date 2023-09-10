@@ -1,5 +1,6 @@
-//fetch("students.json")
-fetch("http://localhost:8000/get_database")
+fetch("products.json")
+
+
 .then(function(response){
 	return response.json();
 }).then(function(students){
@@ -12,7 +13,7 @@ fetch("http://localhost:8000/get_database")
 				<td>${product.name}</td>
 				<td>${product.branch}</td>
 				<td>${product.dob}</td>
-				<td>${product.present}</td>
+			
 			</tr>
 		`;
 	}
@@ -24,3 +25,5 @@ fetch("http://localhost:8000/get_database")
 function myfun(){
 	alert("hello dude")
 }
+
+
